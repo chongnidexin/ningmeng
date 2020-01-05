@@ -23,3 +23,10 @@ class RobotTwo(object):
 
 	def robot_info(self):
 		print("{0}年生产的机器人{1}，是中国研发的".format(slef.year,self.name))
+
+
+#第三代机器人
+#
+#具有两个父类的属性和方法时，如果父类具有同名方法的时候，就近取用
+#具有两个父类的属性和方法时，父类一个有初始值，一个没有时需注意重写
+class RobotThree(RobotTwo,RobotOne):
